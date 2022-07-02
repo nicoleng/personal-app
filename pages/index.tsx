@@ -13,8 +13,7 @@ export default function Index() {
             <div className="w-full sticky top-4 z-30">
                 <div className="navbar">
                     <div className="flex items-center pb-4">
-                        <div className="ml-auto items-center hidden md:flex"><a className="ml-8 text-lg text-gray1"
-                                                                                href="/writing">Writing</a><a
+                        <div className="ml-auto items-center hidden md:flex"><a
                             className="ml-8 text-lg text-gray1" href="/about-me">More About Me</a>
                         </div>
                         <button className="ml-auto md:hidden text-xl text-gray1">
@@ -31,7 +30,7 @@ export default function Index() {
             </div>
             <div className="wrapper">
                 <div id="header">
-                    <img src="/headshot-closeup.jpeg" id="prof-pic" />
+                    <img src="/headshot-closeup.jpeg" id="prof-pic" alt="Nicole Ng"/>
                     <h1>
                         Hi, I’m Nicole!
                     </h1>
@@ -40,13 +39,13 @@ export default function Index() {
                     </h2>
 
                 </div>
-                <main class="page-content" aria-label="Content">
+                <main className="page-content" aria-label="Content">
                     <p>
                         I currently work at <a href="https://www.ribbonhealth.com/">Ribbon Health</a> building
                         out data pipelines and models for our provider directory
                         API platform, allowing providers, care navigators, health plans, and digital health companies to
                         build solutions that ensure efficient care decisions.  Previously I’ve worked at Aetna and Uber.
-                        Check out my linkedin for a more detailed overview.
+                        Check out my <a href="https://www.linkedin.com/in/nicolesng/">Linkedin</a> for a more detailed overview.
                     </p>
 
                     <p>
@@ -80,45 +79,6 @@ export default function Index() {
                         at <a href="mailto:nicolesng20@gmail.com">nicolesng20@gmail.com</a> or on
                         twitter <a href="https://twitter.com/nycole_ng">@nycole_ng</a>.
                     </p>
-                {/*<data className="u-url" href="/"></data>*/}
-                {/*<div className="wrapper">*/}
-                {/*    <div className="footer-col-wrapper">*/}
-                {/*        <div className="footer-col footer-col-1">*/}
-
-                {/*            <ul className="contact-list">*/}
-                {/*                <li className="p-name">Nicole Ng</li>*/}
-                {/*                <li><a className="u-email" href="mailto:nicolesng20@gmail.com">nicolesng20(at)gmail</a></li>*/}
-                {/*            </ul>*/}
-                {/*        </div>*/}
-
-                {/*        <div className="footer-col footer-col-2">*/}
-                {/*            <ul className="social-media-list">*/}
-                {/*                <li><a href="https://www.linkedin.com/in/nicolesng" className="icon brands fa-linkedin">*/}
-                {/*                    /!*<span className="label">Linkedin</span>*!/*/}
-                {/*                    </a>*/}
-                {/*                </li>*/}
-                {/*                <li><a href="https://www.instagram.com/miss.nng"*/}
-                {/*                       className="icon brands fa-instagram">*/}
-                {/*                    /!*<span className="label">Instagram</span>*!/*/}
-                {/*                    </a>*/}
-                {/*                </li>*/}
-                {/*                <li><a href="https://github.com/nicoleng" className="icon brands fa-github">*/}
-                {/*                    /!*<span className="label">Github</span>*!/*/}
-                {/*                    </a>*/}
-                {/*                </li>*/}
-                {/*                <li><a href="https://twitter.com/nycole_ng" className="icon brands fa-twitter">*/}
-                {/*                    /!*<span className="label">Twitter</span>*!/*/}
-                {/*                    </a>*/}
-                {/*                </li>*/}
-                {/*            </ul>*/}
-                {/*        </div>*/}
-
-                {/*        <div className="footer-col footer-col-3">Last updated Jun 30, 2022<p> <a*/}
-                {/*            href="https://github.com/nicoleng/nicoleng.github.io">Repo</a></p>*/}
-                {/*            <p></p>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
 
             </footer>
 
