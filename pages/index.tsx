@@ -70,7 +70,7 @@ export default function Index() {
                 </main>
             </div>
 
-            <footer className="site-footer h-card">
+            <footer className="site-footer wrapper">
                 <h3>
                         Contact
                     </h3>
