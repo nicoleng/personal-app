@@ -71,6 +71,9 @@ div {
     width: 150px;
     height: 150px;
     border-radius: 100px;
+    box-shadow:  0 10px 15px -3px rgb(0 0 0/0.1),0 4px 6px -4px rgb(0 0 0/0.1);
+
+
 }
 
 #header{
@@ -104,6 +107,7 @@ h2{
     #prof-pic {
     width: 200px;
     height: 200px;
+    box-shadow:  0 10px 15px -3px rgb(0 0 0/0.1),0 4px 6px -4px rgb(0 0 0/0.1);
     border-radius: 100px;
     }
 }
