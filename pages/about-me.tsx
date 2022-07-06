@@ -1,6 +1,32 @@
+import {useState} from "react";
+import { Squash as Hamburger } from 'hamburger-react';
+
 export default function AboutMe() {
+    const [isOpen, setOpen] = useState(false);
+
     return (
         <>
+            <div className="navbar">
+
+                    <div id="flex-container">
+                        <div>
+                            <a href="/"><img src="/nn.png" alt='NN' id="initials" /></a>
+                        </div>
+                        <div id="hamburger">
+                            <Hamburger size={20} label="Show menu" toggled={isOpen} toggle={setOpen}/>
+                        </div>
+                            {isOpen && (
+                                <>
+                                    <div id="menu">
+                                        <p><a href="/about-me">More About Me</a></p>
+                                        <p><a href="/">Home</a></p>
+                                    </div>
+                                </>
+                            )}
+
+                    </div>
+                </div>
+
             <h1>More About Me</h1>
             <h2>
                 Personal Interests

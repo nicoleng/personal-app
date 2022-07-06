@@ -1,5 +1,9 @@
 import Head from "next/head";
+import {useState} from "react";
+import { Squash as Hamburger } from 'hamburger-react';
+
 export default function Index() {
+    const [isOpen, setOpen] = useState(false);
     return (
         <>
             <Head>
@@ -7,27 +11,31 @@ export default function Index() {
                 <meta name="description" content="Welcome to my portfolio"/>
 
             </Head>
-            <div className="top bar">
 
-            </div>
-            <div className="w-full sticky top-4 z-30">
+            {/*</div>*/}
+            {/*<div className="w-full sticky top-4 z-30">*/}
+
                 <div className="navbar">
-                    <div className="flex items-center pb-4">
-                        <div className="ml-auto items-center hidden md:flex"><a
-                            className="ml-8 text-lg text-gray1" href="/about-me">More About Me</a>
+
+                    <div id="flex-container">
+                        <div>
+                            <a href="/"><img src="/nn.png" alt='NN' id="initials" /></a>
                         </div>
-                        <button className="ml-auto md:hidden text-xl text-gray1">
-                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
-                                 stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <line x1="3" y1="12" x2="21" y2="12"></line>
-                                <line x1="3" y1="6" x2="21" y2="6"></line>
-                                <line x1="3" y1="18" x2="21" y2="18"></line>
-                            </svg>
-                        </button>
+                        <div id="hamburger">
+                            <Hamburger size={20} label="Show menu" toggled={isOpen} toggle={setOpen}/>
+                        </div>
+                            {isOpen && (
+                                <>
+                                    <div id="menu">
+                                        <p><a href="/about-me">More About Me</a></p>
+                                        <p><a href="/">Home</a></p>
+                                    </div>
+                                </>
+                            )}
+
                     </div>
                 </div>
-            </div>
+
             <div className="wrapper">
                 <div id="header">
                     <img src="/headshot-closeup.jpeg" id="prof-pic" alt="Nicole Ng"/>
@@ -39,31 +47,28 @@ export default function Index() {
                     </h2>
 
                 </div>
-                <main className="page-content" aria-label="Content">
+                <main className="page-content">
                     <p>
-                        I currently work at <a href="https://www.ribbonhealth.com/">Ribbon Health</a> building
-                        out data pipelines and models for our provider directory
-                        API platform, allowing providers, care navigators, health plans, and digital health companies to
-                        build solutions that ensure efficient care decisions.  Previously I’ve worked at Aetna and Uber.
-                        Check out my <a href="https://www.linkedin.com/in/nicolesng/">Linkedin</a> for a more detailed overview.
+                        I currently work at <a href="https://www.ribbonhealth.com/">Ribbon Health</a>, building a
+                        API and provider data platform for care navigators, health plans, and digital health companies.
+                        Previously I’ve worked at <a href="aetna.com">Aetna</a> and <a href="uber.com">Uber</a>.
+                        Check out my <a href="https://www.linkedin.com/in/nicolesng/">Linkedin</a> for more details.
                     </p>
 
                     <p>
-                        In the past I taught a 10-week <a href="https://github.com/nicoleng/bacinsight_19">Intro to Data
-                        Science workshop</a> at NYU Stern to 16 students through the Business Analytics Club, covering
-                        topics spanning data manipulation, visualization, statistics, machine learning and neural networks,
-                        culminating in final group projects and presentations. These newfound skills were then applied in
-                        real pro-bono consulting projects with Pepper, Sharemeals and IBM, which I helped to source and manage.
+                        In the past I've taught a 10-week <a href="https://github.com/nicoleng/bacinsight_19">Intro to Data
+                        Science Workshop</a> at NYU Stern's Business Analytics Club, covering data visualization, statistics,
+                        machine learning, and more, culminating in final group modeling projects. These newfound skills
+                        were then applied in pro-bono consulting engagements
+                        with <a href="https://www.wearpepper.com/">Pepper</a> and <a href="https://sharemeals.org/">Share Meals</a>,
+                        which I helped source and manage.
                     </p>
                     <p>
-                        I also made this <a href="https://docs.google.com/document/d/1lobKMk8h12alAvC0bNVlfqxLS8amDSgSYkjWQBIlQEc/edit?folder=0ADQs-R7jtf-6Uk9PVA&pli=1">Data
-                        Science Dictionary</a> to help myself review key topics for interviews and also keep track of new
-                        concepts I learn on the job. The intent is for it to be a living doc tracking my progress, not a
-                        published product, but I hope it can be helpful to others by making it public. Notice something is
+                        Looking to get into Data Science? Check out this <a href="https://docs.google.com/document/d/1lobKMk8h12alAvC0bNVlfqxLS8amDSgSYkjWQBIlQEc/edit?folder=0ADQs-R7jtf-6Uk9PVA&pli=1">Dictionary</a> I
+                        made covering key topics for interviews and important concepts I encounter on the job.
+                        I use this as a living doc to track my learning, not as a
+                        published product, but I hope by making it public, it can be helpful to others. Notice something is
                         wrong or have any feedback? Please feel free to leave a comment!
-
-                    <br/><a href="/about-me">More About Me</a>
-
                     </p>
 
 
