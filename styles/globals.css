@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: "Inter", sans-serif;
 }
+
 div {
     display: block;
 }
@@ -46,12 +47,14 @@ div {
     margin-top: 0px;
     padding: 0px;
 }
+
 #menu {
     background-color: white;
     width: 130px;
     margin-left: auto;
     margin-right: 16px;
 }
+
 #hamburger {
     background-color: whitesmoke;
     margin-left: auto;
@@ -67,32 +70,33 @@ div {
     margin: 0 auto;
 }
 
-#prof-pic{
+#prof-pic {
     width: 150px;
     height: 150px;
     border-radius: 100px;
-    box-shadow:  0 10px 15px -3px rgb(0 0 0/0.1),0 4px 6px -4px rgb(0 0 0/0.1);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0/0.1), 0 4px 6px -4px rgb(0 0 0/0.1);
 
 
 }
 
-#header{
+#header {
     text-align: left;
     margin: 50px 0;
 
 }
 
-h1{
+h1 {
     font-weight: 500;
     font-size: 1.75rem;
     line-height: 1.5rem;
 }
 
-h2{
+h2 {
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 1.5rem;
 }
+
 @media (min-width: 600px) {
     h1 {
         font-size: 2rem;
@@ -105,10 +109,10 @@ h2{
     }
 
     #prof-pic {
-    width: 200px;
-    height: 200px;
-    box-shadow:  0 10px 15px -3px rgb(0 0 0/0.1),0 4px 6px -4px rgb(0 0 0/0.1);
-    border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0/0.1), 0 4px 6px -4px rgb(0 0 0/0.1);
+        border-radius: 100px;
     }
 }
 
@@ -116,19 +120,22 @@ h2{
 p {
     display: block;
     margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-end: 1.5em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     line-height: 1.35rem;
 }
 
 
-p a {
+a {
     color: royalblue;
     /*text-underline-offset: 4px;*/
     text-decoration: none;
 
 
+}
+a:hover {
+    color: purple;
 }
 
 hr {
@@ -150,6 +157,12 @@ li {
 
 ul {
     list-style-type: disc;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.35rem;
 }
 
 
