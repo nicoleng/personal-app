@@ -1,7 +1,7 @@
 import Head from "next/head";
 import {useState} from "react";
 import {Squash as Hamburger} from 'hamburger-react';
-import { prefix } from '../prefix.js';
+import {prefix} from '../prefix.js';
 
 export default function Index() {
     const [isOpen, setOpen] = useState(false);
@@ -20,7 +20,7 @@ export default function Index() {
 
                 <div id="flex-container">
                     <div>
-                        <a href="/"><img src="${prefix}/nn.png" alt='NN' id="initials"/></a>
+                        <a href="/"><img src={`${prefix}/nn.png`} alt='NN' id="initials"/></a>
                     </div>
                     <div id="hamburger">
                         <Hamburger size={20} label="Show menu" toggled={isOpen} toggle={setOpen}/>
@@ -39,7 +39,7 @@ export default function Index() {
 
             <div className="wrapper">
                 <div id="header">
-                    <img src="${prefix}/headshot-closeup.jpeg" id="prof-pic" alt="Nicole Ng"/>
+                    <img src={`${prefix}/headshot-closeup.jpeg`} id="prof-pic" alt="Nicole Ng"/>
                     <h1>
                         Hi, I’m Nicole!
                     </h1>

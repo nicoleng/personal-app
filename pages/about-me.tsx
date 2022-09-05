@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {Squash as Hamburger} from 'hamburger-react';
+import {prefix} from "../prefix";
 
 export default function AboutMe() {
     const [isOpen, setOpen] = useState(false);
@@ -10,7 +11,7 @@ export default function AboutMe() {
 
                 <div id="flex-container">
                     <div>
-                        <a href="/"><img src="${prefix}/nn.png" alt='NN' id="initials"/></a>
+                        <a href="/"><img src={`${prefix}/nn.png`} alt='NN' id="initials"/></a>
                     </div>
                     <div id="hamburger">
                         <Hamburger size={20} label="Show menu" toggled={isOpen} toggle={setOpen}/>
