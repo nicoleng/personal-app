@@ -10,10 +10,7 @@ export default function Index() {
             <Head>
                 <title>Nicole Ng</title>
                 <meta name="description" content="Welcome to my website"/>
-                <meta property="og:description" content="Nicole Ng" />
                 <meta property="og:title" content="Nicole Ng" key="title" />
-                <meta property="og:type" content="website" />
-
             </Head>
 
             <div className="navbar">
