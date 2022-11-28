@@ -8,13 +8,13 @@ export default function Index() {
     return (
         <>
             <Head>
-                <title>Nicole Ng</title>
                 <meta name="description" content="Welcome to my website"/>
+                <meta property="og:description" content="Nicole Ng" />
+                <meta property="og:title" content="Nicole Ng" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="public/nn.png" />
 
             </Head>
-
-            {/*</div>*/}
-            {/*<div className="w-full sticky top-4 z-30">*/}
 
             <div className="navbar">
 
