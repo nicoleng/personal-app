@@ -1,3 +1,3 @@
-# Hi, I'm Nicole Ng
+# Hi, I'm Nicole Ng 👋
 
-Welcome to my github and personal website!
+Welcome to my github and personal website! 
