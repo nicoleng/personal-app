@@ -4,14 +4,15 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                {/*<meta property="og:title" content="Nicole Ng" key="title" />*/}
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
-                    rel="stylesheet"
+
+                <meta property="og:title" content="Nicole Ng" key="title"/>
+                <meta property="og:description" content="Nicole Ng's Personal Website" key="description"/>
+                <meta
+                  property="og:image"
+                  content=""
                 />
-
-                <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
+                <meta name="twitter:card" content="summary_large_image"></meta>
+                
             </Head>
             <body>
                 <Main />
